@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>select box</title>
+
+    <!-- core css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body onmousedown="noKeyPress(event)">
+    <h1 class="text-center m-2 mt-5">select the the different box</h1>
+    <div class="container mt-5">
+        <div class="boxes">
+            <div class="box" onclick="box('0')"></div>
+            <div class="box" onclick="box('1')"></div>
+            <div class="box" onclick="box('2')"></div>
+            <div class="box" onclick="box('3')"></div>
+            <div class="box" onclick="box('4')"></div>
+            <div class="box" onclick="box('5')"></div>
+            <div class="box" onclick="box('6')"></div>
+            <div class="box" onclick="box('7')"></div>
+            <div class="box" onclick="box('8')"></div>
+            <div class="box" onclick="box('9')"></div>
+            <div class="box" onclick="box('10')"></div>
+            <div class="box" onclick="box('11')"></div>
+            <div class="box" onclick="box('12')"></div>
+            <div class="box" onclick="box('13')"></div>
+            <div class="box" onclick="box('14')"></div>
+            <div class="box" onclick="box('15')"></div>
+        </div>
+        <div class="btns">
+            <button class="btn btn-primary score ">Score : <b>0</b></button>
+            <button class="btn btn-danger err">Errors : <b>0</b></button>
+        </div>
+    </div>
+
+    <!-- core script -->
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
