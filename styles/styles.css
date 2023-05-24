@@ -1,77 +1,69 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
-    text-transform: capitalize;
-    user-select: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: url("../images/bg.jpg");
-    background-size: cover;
+  background: linear-gradient(45deg, #2881b4 50%, #6fb6d5 50%);
+  color: #fff;
+  font-family: sans-serif;
+  user-select: none;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .container h1.text-center {
-    color: #333;
+  color: #333;
 }
 
 .container .btns .btn {
-    display: block;
-    margin: 10px;
-    transition: 0.3s;
-    position: relative;
-    left: -10em;
-    cursor: auto;
+  display: block;
+  margin: 10px;
+  transition: 0.3s;
+  position: relative;
+  left: -10em;
+  cursor: auto;
 }
 
 .container .btns .btn:hover {
-    transform: scale(1.6);
-    transition: 0.3s;
+  transform: scale(1.6);
+  transition: 0.3s;
 }
 
 .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    width: 29em;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  width: 29em;
+  align-content: center;
+  justify-content: center;
 }
 
 .boxes .box {
-    width: 100px;
-    height: 100px;
-    background: #007bff;
-    display: inline-flex;
-    margin: 2px;
-    transition: 0.3s;
-    cursor: pointer;
-    outline: 3px inset #fff;
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  margin: 2px;
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .boxes .box:hover {
-    transition: 0.3s;
-    transform: scale(.8);
+  transition: 0.3s;
+  transform: scale(0.8);
 }
 
 .boxes .box:active {
-    outline: 3px outset #fff;
-    transition: 0.2s;
-    transform: rotate(180deg) rotateX(360deg) scale(2);
-    opacity: 0.8;
+  transition: 0.2s;
+  transform: scale(1.8);
+  opacity: 0.8;
 }
 
-.boxes .box.different {
-    opacity: 0.8;
+.boxes .box.active {
+  opacity: 0.9;
 }
